@@ -107,13 +107,14 @@
         }
       }
       p {
-        font-size: 16px;
+        font-size: 16px !important;
+        padding: 0 40px;
         color: #404040;
         font-weight: 500;
         margin-bottom: 16px;
         line-height: 20px;
         text-align: justify;
-        padding: 0 40px;
+        width: 66%;
       }
       img {
         display: block;
@@ -132,6 +133,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
     .fruit {
       width: auto;
       padding: 0 15px;
@@ -145,7 +147,7 @@
           font-size: 25px;
         }
         p {
-          font-size: 14px;
+          font-size: 16px !important;
           height: auto;
           margin-bottom: 0;
         }
