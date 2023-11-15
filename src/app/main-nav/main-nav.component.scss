@@ -6,6 +6,10 @@
 
 .sidenav {
   width: 200px;
+  background: linear-gradient(#b1cc94, #c6d5c3);
+  mat-nav-list {
+    margin-top: 65px;
+  }
 }
 
 .sidenav .mat-toolbar {
@@ -17,13 +21,14 @@
   top: 0;
   z-index: 1;
   background: transparent;
-  ::ng-deep.mdc-button__label {
-    //color: #404040 !important;
-    font-weight: 700;
-  }
   ::ng-deep.mdc-icon-button {
     color: black;
   }
+}
+
+::ng-deep.mdc-list-item__primary-text {
+  color: #fff !important;
+  font-weight: 700;
 }
 
 .hidden {
@@ -34,5 +39,7 @@
 }
 img {
   border-radius: 50%;
-  width: 50px;
+  width: 90px;
+  margin: auto;
+  padding: 20px 0;
 }

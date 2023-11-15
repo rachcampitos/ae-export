@@ -8,7 +8,9 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <img src="assets/ae-export-logo.jpg" alt="Avatar"
+    /></mat-toolbar>
     <mat-nav-list>
       <a (click)="drawer.toggle()" mat-list-item href="#" routerLink="/inicio"
         >INICIO</a
@@ -36,7 +38,6 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <img src="assets/ae-export-logo.jpg" alt="Avatar" />
       <span class="spacer"></span>
       <div class="links" *ngIf="(isHandset$ | async) === false">
         <a mat-button href="" routerLink="/inicio">INICIO</a>
