@@ -1,0 +1,36 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  ::ng-deep.mdc-button__label {
+    //color: #404040 !important;
+    font-weight: 700;
+  }
+  ::ng-deep.mdc-icon-button {
+    color: black;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.spacer {
+  flex: 1 1 auto;
+}
+img {
+  border-radius: 50%;
+  width: 50px;
+}

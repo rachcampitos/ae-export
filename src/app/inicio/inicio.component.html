@@ -1,0 +1,23 @@
+<div class="header-content container">
+  <div class="header-txt">
+    <h1>AE Export</h1>
+    <p>
+      Somos una empresa exportadora e importadora. Trabajamos de la mano con los
+      agricultores del Valle del rio Casma, los mejores proveedores de frutas y
+      hortalizas frescas, con el fin de ofrecer lo que buscan nuestros clientes.
+    </p>
+  </div>
+  <div class="images">
+    <swiper-container
+      pagination="true"
+      pagination-clickable="true"
+      loop="true"
+      autoplay="true"
+      speed="1000"
+    >
+      <swiper-slide *ngFor="let image of sliderImages"
+        ><img [src]="image"
+      /></swiper-slide>
+    </swiper-container>
+  </div>
+</div>

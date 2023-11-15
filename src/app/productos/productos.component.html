@@ -1,0 +1,32 @@
+<div class="header-content container">
+  <div class="main" *ngIf="!isSmall">
+    <div class="fruit" *ngFor="let item of products">
+      <div class="header-txt">
+        <h1 [ngClass]="item.name">{{ item.name }}</h1>
+        <p>
+          {{ item.description }}
+        </p>
+      </div>
+      <div class="images">
+        <img [src]="item.img" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="swiper" *ngIf="isSmall">
+    <swiper-container
+      pagination="true"
+      pagination-clickable="true"
+      loop="true"
+      speed="2000"
+      autoplay="true"
+    >
+      <swiper-slide *ngFor="let item of products">
+        <h1 [ngClass]="item.name">{{ item.name }}</h1>
+        <p>
+          {{ item.description }}
+        </p>
+        <img [src]="item.img"
+      /></swiper-slide>
+    </swiper-container>
+  </div>
+</div>
