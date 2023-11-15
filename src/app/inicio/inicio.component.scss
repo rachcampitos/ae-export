@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,6 +16,7 @@
   left: 0px;
 }
 .header-content {
+  font-family: "Roboto", sans-serif;
   .header-txt {
     position: relative;
     top: 200px;
